@@ -1,2 +1,0 @@
-# Automaten_Aufsteller
-Clickdummy
