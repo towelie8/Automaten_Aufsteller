@@ -1,14 +1,5 @@
 
-@media screen and (min-width:576px) {
-    .carousel-inner {
-        display:flex;
-    }
-    .carousel-item {
-        display:block;
-        margin-right: 1rem;
-        flex: 0 0 calc(100%/3 - 1rem)
-    }
-}
+
 .img-wrapper {
     position: relative;
     width: 100%;
@@ -60,4 +51,60 @@
 }
 .carousel-control-prev:hover, .carousel-control-next:hover {
     opacity: 0.8;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #111010; /* Dunkelgrau, passen Sie diese Farbe nach Bedarf an */
+    color: rgb(20, 20, 20); /* Weiße Textfarbe */
+    text-align: center; /* Zentriert den Text, kann entfernt werden, wenn nicht gewünscht */
+}
+
+footer a {
+    color: white; /* Stellt sicher, dass Links ebenfalls weiß sind */
+}
+
+footer a:hover {
+    color: #ddd; /* Leicht helleres Grau beim Hover über Links, optional */
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /* Versteckt das Popup standardmäßig */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Stil für das Sichtbarmachen des Popups */
+.show-popup {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (min-width:576px) {
+    .carousel-inner {
+        display:flex;
+    }
+    .carousel-item {
+        display:block;
+        margin-right: 1rem;
+        flex: 0 0 calc(100%/3 - 1rem)
+    }
 }

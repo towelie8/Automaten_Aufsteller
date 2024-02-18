@@ -74,7 +74,6 @@
         <div class="carousel-item">
             <div class="card">
                 <div class="img-wrapper" style="background-image: url('assets/stock/snackautomat2.webp');">
-                <!--<img src="assets/stock/snackautomat2.webp" class="card-img-top" alt="...">-->
                 </div>
                     <div class="card-body">
                         <h4 class="card-title">Automatenmodell</h4>
@@ -137,6 +136,15 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
+</div>
+<!-- Popup Overlay -->
+<div id="popupOverlay" class="popup-overlay">
+    <!-- Popup Content -->
+    <div class="popup-content">
+        <h2>Hinweis</h2>
+        <p>Diese Website befindet sich noch in Arbeit. Danke für Ihr Verständnis!</p>
+        <button onclick="closePopup()">Schließen</button>
+    </div>
 </div>
 
 <!-- Footer -->
@@ -251,12 +259,13 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="text-center p-4">
         © 2024 Copyright:
         <a class="text-reset fw-bold" href="www.maximilian.becker@gmail.com">MB</a>
     </div>
 </footer>
 <script src="scripts/index.js"></script>
+<script src="scripts/popup.js"></script>
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
