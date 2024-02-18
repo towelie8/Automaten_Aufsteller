@@ -1,6 +1,6 @@
 const multipleItemCarousel = document.querySelector('#carouselExampleControls');
 
-if(window.matchMedia("min-width:576").matches) {
+if(window.matchMedia("min-width:576px").matches) {
     const carousel = new bootstrap.Carousel(multipleItemCarousel)
     var carouselWidth = $('.carousel-inner')[0].scrollWidth;
     var cardWidth = $('.carousel-item').width();
@@ -24,7 +24,7 @@ if(window.matchMedia("min-width:576").matches) {
                 600)
         }
     });
-
 }else{
     // later
-}
+    $(multipleItemCarousel).addClass('slide')
+    }
