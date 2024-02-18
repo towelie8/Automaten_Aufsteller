@@ -1,6 +1,7 @@
+const multipleItemCarousel = document.querySelector('#carouselExampleControls');
+
 if(window.matchMedia("min-width:576").matches) {
-
-
+    const carousel = new bootstrap.Carousel(multipleItemCarousel)
     var carouselWidth = $('.carousel-inner')[0].scrollWidth;
     var cardWidth = $('.carousel-item').width();
 
